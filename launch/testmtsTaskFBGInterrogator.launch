@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+   
+    <!-- FBG interrogator -->
+    <node pkg="fbg_hybrid_modeling" type="testFBGInterrogator" name="testFBGInterrogator" output="screen"/>
+    
+    <!-- node pkg="fbg_hybrid_modeling" type="FBGInterrogatorROSNodeClass.py" name="FBGInterrogatorROSNodeClass" output="screen"/-->
+    <node pkg="fbg_hybrid_modeling" type="stereoVisionClass.py" name="stereoVisionClass" output="screen"/>
+    <node pkg="fbg_hybrid_modeling" type="threadingBarrierEvent.py" name="threadingBarrierEvent" output="screen"/>
+
+    <!--node pkg="fbg_hybrid_modeling" type="FBGSensitivity2.py" name="FBGSensitivity2" output="screen"/>
+    <node pkg="fbg_hybrid_modeling" type="Output2.py" name="Output2" output="screen"/-->
+    
+    <node pkg="fbg_hybrid_modeling" type="testScriptLiveStreaming.py" name="testScriptLiveStreaming" output="screen"/>
+
+
+    <node pkg="fbg_hybrid_modeling" type="motorDriverControl" name="motorDriverControl" output="screen"/>
+
+    <node pkg="fbg_hybrid_modeling" type="RosNodeClass.py" name="RosNodeClass" output="screen"/>
+    
+    <!-- node pkg="fbg_hybrid_modeling" type="maxonMotorROSNodeClass.py" name="maxonMotorROSNodeClass" output="screen"/-->
+    
+    
+
+</launch>

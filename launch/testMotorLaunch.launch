@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+   
+    <!-- FBG interrogator -->
+    <node pkg="fbg_hybrid_modeling" type="motorDriverControl" name="motorDriverControl" output="screen"/>
+    
+    <node pkg="fbg_hybrid_modeling" type="maxonMotorROSNodeClass.py" name="maxonMotorROSNodeClass" output="screen"/>
+   
+    <!--node pkg="fbg_hybrid_modeling" type="FBGSensitivity2.py" name="FBGSensitivity2" output="screen"/>
+    <node pkg="fbg_hybrid_modeling" type="Output2.py" name="Output2" output="screen"/-->
+    
+    <node pkg="fbg_hybrid_modeling" type="testMotor.py" name="testMotor" output="screen"/>
+
+</launch>
